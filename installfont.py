@@ -11,7 +11,7 @@ if fontfolder not in os.listdir('/usr/share/fonts'):
     os.mkdir(f'{folder}{fontfolder}')
 
 def install_font():
-    selected_font = filedialog.askopenfilename(title='Select Font')
+    selected_font = filedialog.askopenfilename(title='Select Font', filetypes=[('Font Files', '*.ttf'), ('Font Files', '*.otf')])
     if selected_font:
         font_name = os.path.basename(selected_font)
         os.system(f'cp "{selected_font}" "{folder}{fontfolder}/{font_name}"')
