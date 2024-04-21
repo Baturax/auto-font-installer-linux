@@ -3,7 +3,7 @@ from tkinter import filedialog, messagebox
 import os
 
 fontfolder = "myinstalledfonts"
-folder = "/usr/share/fonts/"
+folder = "~/.local/share/fonts"
 
 os.system('clear')
 
